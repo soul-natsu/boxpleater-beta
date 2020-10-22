@@ -38,8 +38,10 @@ from tkinter import *
 master = Tk()
 master.configure()
 master.title("Boxpleater")
-photo = PhotoImage(file="Crane.png")
-master.iconphoto(False, photo)
+try: 
+	photo = PhotoImage(file="Crane.png")
+	master.iconphoto(False, photo)
+except: pass
 canvas2 = Canvas(master,width=600,height = 450)
 canvas2.pack()
 
